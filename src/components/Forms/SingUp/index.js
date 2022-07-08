@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik, Form, Field } from "formik";
 import WrappedInput from "../ WrappedInput /index";
+import RadioButton from "../RadioButton";
 import { SCHEMA_SIGN_UP } from "../../../utils/schemaValidation";
 import styles from "./SingUp.module.scss";
 
@@ -41,20 +42,7 @@ const SingUpForm = () => {
               type="password"
               placeholder="Password Confirmation"
             />
-            <label>
-              <WrappedInput
-                name="picked"
-                type="radio"
-                value="Buyer"
-                textInLabel="Join As a Buyer"
-              />
-            </label>
-            <WrappedInput
-              name="picked"
-              type="radio"
-              value="Marketplace"
-              textInLabel="Join As a Creative or Marketplace Seller"
-            />
+            <RadioButton />
             <input
               type="submit"
               value="create Acount"
