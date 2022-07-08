@@ -20,6 +20,7 @@ export const SCHEMA_SIGN_UP = Yup.object({
   lname: SCHEMA_NAME,
   email: SCHEMA_EMAIL,
   password: SCHEMA_PASSWORD,
+  passconfirm: Yup.string().oneOf([Yup.ref("password")], "Pass not equel"),
   age: Yup.number().integer().min(18).max(125),
 });
 

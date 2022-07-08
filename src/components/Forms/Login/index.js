@@ -4,7 +4,7 @@ import WrappedInput from "../ WrappedInput /index";
 import { SCHEMA_SIGN_IN } from "../../../utils/schemaValidation";
 import styles from "./LoginForm.module.scss";
 
-const initialValues = { email: "", password: "", passconfirm: "" };
+const initialValues = { email: "", password: "" };
 
 const LoginForm = () => {
   const onSubmit = (value, formikBag) => {
@@ -23,9 +23,9 @@ const LoginForm = () => {
             <WrappedInput
               name="password"
               type="password"
-              placeholder="password"
+              placeholder="Password"
             />
-            <input type="submit" value="login" />
+            <input type="submit" value="login" className={styles.input} />
           </Form>
         );
       }}

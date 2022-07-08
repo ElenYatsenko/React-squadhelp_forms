@@ -1,8 +1,41 @@
-.form {
+.header-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  max-width: 400px;
-  min-height: 100px;
-  margin: auto;
+
+  min-width: 320px;
+  margin: 20px 10%;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 40px;
+  padding: 0 20px;
+
+  text-decoration: none;
+
+  background-color: #3ea9f5;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+
+.header {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 3em;
+  font-size: 3rem;
+}
+.subtitle {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
 }
