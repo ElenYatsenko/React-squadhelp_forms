@@ -1,9 +1,10 @@
 import React from "react";
 import { Formik, Form, Field } from "formik";
 import WrappedInput from "../ WrappedInput /index";
-import RadioButton from "../RadioButton";
+import RadioButton from "../WrappedInputRadio";
 import { SCHEMA_SIGN_UP } from "../../../utils/schemaValidation";
 import styles from "./SingUp.module.scss";
+import WrappedInputRadio from "../WrappedInputRadio/index";
 
 const initialValues = {
   fname: "",
@@ -42,7 +43,21 @@ const SingUpForm = () => {
               type="password"
               placeholder="Password Confirmation"
             />
-            <RadioButton />
+            <WrappedInputRadio
+              name="picked"
+              type="radio"
+              value="Buyer"
+              textLabel="Join As a Buyer"
+              textSubtitle="I am looking for a Name, Logo or Tagline for my business, brand or
+              product."
+            />
+            <WrappedInputRadio
+              name="picked"
+              type="radio"
+              value="Marketplace"
+              textLabel="Join As a Creative or Marketplace Seller"
+              textSubtitle="I plan to submit name ideas, Logo designs or sell names in Domain Marketplace."
+            />
             <label>
               <Field
                 type="checkbox"
