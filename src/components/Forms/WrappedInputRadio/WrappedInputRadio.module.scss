@@ -1,38 +1,24 @@
-.container-field {
+.label {
   display: flex;
   flex-direction: row;
 
   min-width: 320px;
-
-  padding: 5px;
+  height: 70px;
 
   border: 1px solid #fff;
-  margin: 15px;
-  font-size: 1rem;
-}
 
-.subtitle {
   color: #fff;
-  font-size: 12px;
-  margin: 5px;
-}
-
-.join-label {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
   font-size: 20px;
-  padding: 10px 15px;
-  color: #fff;
-  margin-bottom: 5px;
-}
-
-.field-join {
-  margin: 0 1rem;
+  margin: 5px 10px;
 }
 
 .input {
-  margin-bottom: 1.2rem;
+  padding: 20px;
+  border: 3px solid transparent;
+  font-size: 1rem;
+  margin: 15px;
+}
+
+.description {
+  margin-top: 15px;
 }

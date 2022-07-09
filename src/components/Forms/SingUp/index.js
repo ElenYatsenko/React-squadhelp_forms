@@ -48,17 +48,23 @@ const SingUpForm = () => {
               type="radio"
               value="Buyer"
               textLabel="Join As a Buyer"
-              textSubtitle="I am looking for a Name, Logo or Tagline for my business, brand or
-              product."
+              checked
             />
+            <span className={styles.subtitle}>
+              I am looking for a Name, Logo or Tagline for my business, brand or
+              product.
+            </span>
             <WrappedInputRadio
               name="picked"
               type="radio"
               value="Marketplace"
               textLabel="Join As a Creative or Marketplace Seller"
-              textSubtitle="I plan to submit name ideas, Logo designs or sell names in Domain Marketplace."
             />
-            <label>
+            <span className={styles.subtitle}>
+              I plan to submit name ideas, Logo designs or sell names in Domain
+              Marketplace.
+            </span>
+            <label className={styles["wrapper - label"]}>
               <Field
                 type="checkbox"
                 name="checkbox"

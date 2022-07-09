@@ -1,21 +1,17 @@
 import React from "react";
 import { Field } from "formik";
-import cx from "classnames";
 import styles from "./WrappedInputRadio.module.scss";
 
 const WrappedInputRadio = (props) => {
-  const { name, textLabel, textSubtitle, ...rest } = props;
+  const { name, textLabel, ...rest } = props;
   return (
-    <label className={styles["container-field"]}>
-      <Field name={name} className={styles["field-join"]}>
+    <label className={styles.label}>
+      <Field name={name}>
         {({ field, meta }) => {
           return <input {...field} {...rest} className={styles.input} />;
         }}
       </Field>
-      <label className={styles["join-label"]}>
-        {textLabel}
-        <span className={styles.subtitle}>{textSubtitle}</span>
-      </label>
+      <span className={styles.description}> {textLabel}</span>
     </label>
   );
 };
