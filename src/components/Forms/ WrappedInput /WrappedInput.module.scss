@@ -1,11 +1,10 @@
 .label {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   position: relative;
 }
-.span {
-  position: absolute;
-}
+
 .input {
   width: 100%;
   padding: 20px;

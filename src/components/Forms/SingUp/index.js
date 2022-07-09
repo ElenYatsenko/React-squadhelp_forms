@@ -43,6 +43,20 @@ const SingUpForm = () => {
               placeholder="Password Confirmation"
             />
             <RadioButton />
+            <label>
+              <Field
+                type="checkbox"
+                name="checkbox"
+                textSpan="Allow Squadhelp to send marketing/promotional offers from time to
+              time"
+                className={styles.checkbox}
+              ></Field>
+              <span className={styles["span-checkbox"]}>
+                Allow Squadhelp to send marketing/promotional offers from time
+                to time
+              </span>
+            </label>
+
             <input
               type="submit"
               value="create Acount"

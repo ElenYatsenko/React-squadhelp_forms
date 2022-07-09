@@ -4,13 +4,11 @@ import cx from "classnames";
 import styles from "./WrappedInput.module.scss";
 
 const WrappedInput = (props) => {
-  const { name, textInLabel, ...rest } = props;
+  const { name, ...rest } = props;
   return (
     <label className={styles.label}>
-      <span className={styles.span}>{textInLabel}</span>
       <Field name={name}>
         {({ field, meta }) => {
-          console.log(field);
           const inputStyles = cx(styles.input, {
             [styles.valid]: !meta.error && meta.touched,
             [styles.invalid]: meta.error && meta.touched,
@@ -18,7 +16,6 @@ const WrappedInput = (props) => {
           return <input {...field} {...rest} className={inputStyles} />;
         }}
       </Field>
-
       <ErrorMessage name={name} component="div" className={styles.error} />
     </label>
   );
