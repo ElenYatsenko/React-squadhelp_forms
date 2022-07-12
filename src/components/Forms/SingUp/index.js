@@ -64,7 +64,7 @@ const SingUpForm = () => {
               I plan to submit name ideas, Logo designs or sell names in Domain
               Marketplace.
             </span>
-            <label className={styles["wrapper - label"]}>
+            <label className={styles.wrapper_label}>
               <Field
                 type="checkbox"
                 name="checkbox"
@@ -72,7 +72,7 @@ const SingUpForm = () => {
               time"
                 className={styles.checkbox}
               ></Field>
-              <span className={styles["span-checkbox"]}>
+              <span className={styles.span_checkbox}>
                 Allow Squadhelp to send marketing/promotional offers from time
                 to time
               </span>
