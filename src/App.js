@@ -4,7 +4,7 @@ import Login from "./page/Login";
 import SingUp from "./page/SingUp";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
